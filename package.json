@@ -2,6 +2,9 @@
   "name": "personal-website",
   "version": "0.1.0",
   "private": true,
+  "engines": {
+    "node": "6.10.3"
+  },
   "dependencies": {
     "react": "^16.3.2",
     "react-dom": "^16.3.2",
