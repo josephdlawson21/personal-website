@@ -1,11 +1,20 @@
+import React, { Component } from 'react';
+import './App.css';
+import Resume from './components/resume'
+import Blogs from './components/blogs'
 
-const App = (function() {
-  return class App {
-    static init() {
-      console.log('init');
-      fetch('https://cors-anywhere.herokuapp.com/https://medium.com/@josephdlawson21/latest?format=json')
-        .then(res => res.json())
-        .then(json => console.log(json))
-    }
+class App extends Component {
+  render() {
+    return (
+      <div className="App">
+        <h1>Joseph Lawson</h1>
+        <div>
+          <Resume/>
+          <Blogs/>
+        </div>
+      </div>
+    );
   }
-})();
+}
+
+export default App;
